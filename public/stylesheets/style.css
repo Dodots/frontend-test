@@ -6,31 +6,28 @@ body {
 }
 
 .cabecalho {
-  display: flex;
-  background-color: rgba(0,0,0);
-  border-style: solid;
-  border-color: #F00;
+  border: solid;
+  border-color: rgba(39,39,39);
   height: 200px;
   width: 400px;
 }
 
-.logo {
-  background-color: rgba(37,100,02);
-  border-width: medium;
-  border-style: solid;
-  border-color: #F00;
-  width: 200px;
-  height: 200px;
+
+.logo{
+  float:left
 }
 
+
 .ranking {
-  float
-  background-color: rgba(250,250,250);
-  border-width: medium;
-  border-style: solid;
-  border-color: #F00;
-  width: 200px;
-  height: 200px;
+  margin-top: 130px;
+  margin-left: 60px;
+  background-color: rgb(255,255,255);
+  width: 340px;
+  height: 50px;
+}
+
+.ranking p{
+  font-size: 25px
 }
 
 .primeirosColocados{
