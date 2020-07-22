@@ -2,4 +2,45 @@ body {
   text-align: center;
   font-size: 12px;
   font-family: "Arial, sans-serif";
+  background-color: rgba(39,39,39);
+}
+
+.cabecalho {
+  display: flex;
+  background-color: rgba(0,0,0);
+  border-style: solid;
+  border-color: #F00;
+  height: 200px;
+  width: 400px;
+}
+
+.logo {
+  background-color: rgba(37,100,02);
+  border-width: medium;
+  border-style: solid;
+  border-color: #F00;
+  width: 200px;
+  height: 200px;
+}
+
+.ranking {
+  float
+  background-color: rgba(250,250,250);
+  border-width: medium;
+  border-style: solid;
+  border-color: #F00;
+  width: 200px;
+  height: 200px;
+}
+
+.primeirosColocados{
+  margin-top: 5px;
+  border-style: solid;
+  width: 400px;
+}
+
+.primeiro {
+  background-color: rgba(250,250,250);
+  border-style: solid;
+  height: 100px;
 }
