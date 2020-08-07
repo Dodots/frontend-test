@@ -32,6 +32,9 @@ body {
 .primeirosColocados {
   margin-top: 15px;
   width: 320px;
+  border-radius: 5px;
+  background-color: red;
+  overflow: hidden;
 }
 
 .apresentacao {
@@ -42,9 +45,27 @@ body {
   height: 90px;
 }
 
-#par{
+.apresentacao:nth-child(even){
   background-color: #f2f1f1;
 }
+
+.apresentacao:hover{
+  background-color: #ba3538;
+}
+
+.apresentacao:hover .texto h1{
+  color: #ffffff;
+}
+
+.apresentacao:hover .texto p{
+  color: #330C0D;
+}
+
+.apresentacao:hover .ator{
+  border-color: #ffffff;
+}
+
+
 
 .texto{
   padding: 15px 15px;
