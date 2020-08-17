@@ -65,7 +65,9 @@ body {
   border-color: #ffffff;
 }
 
-
+.apresentacao:hover .none{
+  display: absolute;
+}
 
 .texto{
   padding: 15px 15px;
@@ -113,3 +115,37 @@ body {
   color: #707070;
   font-weight: bold;
 }
+
+.votacao {
+  display: flex;
+}
+
+.gosta{
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.title{
+  background-color: #ba3538;
+ }
+
+ .title p{
+  color: #FFFFFF;
+  padding: 4px 11px;
+  font-size: 10px;
+  font-weight: bold;
+ }
+
+ .porcentagem{
+  display: flex;
+  justify-content: center;
+ }
+
+ .porcentagem p {
+  padding: 7px;
+ }
+
+ .none{
+  display: absolute;
+ }
