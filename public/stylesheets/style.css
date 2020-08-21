@@ -34,7 +34,6 @@ body {
   width: 320px;
   border-radius: 5px;
   background-color: red;
-  overflow: hidden;
 }
 
 .apresentacao {
@@ -66,7 +65,17 @@ body {
 }
 
 .apresentacao:hover .none{
-  display: absolute;
+  display: block;
+}
+
+.apresentacao:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.apresentacao:last-of-type{
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .texto{
@@ -118,12 +127,18 @@ body {
 
 .votacao {
   display: flex;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .gosta{
   background-color: #FFFFFF;
-  border-style: solid;
-  border-width: 1px;
+  border-right: 1px solid;
+}
+
+.naogosta{
+  background-color: #FFFFFF;
+  border-left: 0.5px solid #ffffff;
 }
 
 .title{
@@ -131,10 +146,10 @@ body {
  }
 
  .title p{
-  color: #FFFFFF;
-  padding: 4px 11px;
-  font-size: 10px;
-  font-weight: bold;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    font-size: 9px;
+    font-weight: bold;
  }
 
  .porcentagem{
@@ -143,9 +158,29 @@ body {
  }
 
  .porcentagem p {
-  padding: 7px;
+    padding: 4px;
+    font-weight: bold;
+    color: #919191;
+    font-size: 19px;
  }
 
  .none{
-  display: absolute;
+  display: none;
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 6px;
  }
+
+
+ .votacao::before {
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    left: -2%;
+    top: 42%;
+    background-color: white;
+    content: '';
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transform: rotate(45deg);
+}
